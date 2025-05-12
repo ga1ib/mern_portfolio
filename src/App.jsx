@@ -15,6 +15,7 @@ import Skills from './sections/Skills';
 import HeroSection from './sections/HeroSection';
 import ProtectedRoute from './components/ProtectedRoute';
 import { AuthProvider } from './context/AuthContext';
+import AuthContextTest from './context/AuthContextTest';
 
 function HomePage() {
   return (
@@ -49,6 +50,7 @@ function App() {
               }
             />
             <Route path="/contact-form" element={<ContactForm />} />
+            <Route path="/auth-test" element={<AuthContextTest />} />
             <Route
               path="/project-card"
               element={
