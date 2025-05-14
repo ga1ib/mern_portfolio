@@ -40,10 +40,10 @@ const Login = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[#0B0B2E] to-[#1a1a4a] text-white px-6">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-black via-gray-900 to-gray-800 text-white px-6">
       <div className="w-full max-w-md">
-        <div className="bg-gray-800 bg-opacity-50 p-8 rounded-xl border border-gray-700 shadow-xl">
-          <h1 className="text-3xl font-bold mb-6 text-center">Admin Login</h1>
+        <div className="bg-gradient-to-br from-black to-gray-800 p-8 rounded-xl border border-gray-700 shadow-xl">
+          <h1 className="text-3xl font-bold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-300 to-gray-500">Admin Login</h1>
 
           {error && (
             <div className="bg-red-900 bg-opacity-50 text-red-300 p-4 rounded-lg text-center mb-6">
@@ -61,7 +61,7 @@ const Login = () => {
                 value={formData.username}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition"
+                className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-transparent transition"
                 disabled={loading}
               />
             </div>
@@ -75,7 +75,7 @@ const Login = () => {
                 value={formData.password}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition"
+                className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-transparent transition"
                 disabled={loading}
               />
             </div>
@@ -85,7 +85,7 @@ const Login = () => {
               className={`w-full px-6 py-3 rounded-lg text-white font-medium transition-all duration-300 ${
                 loading
                   ? 'bg-gray-600 cursor-not-allowed'
-                  : 'bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 transform hover:scale-105'
+                  : 'bg-gradient-to-r from-gray-800 to-black hover:from-gray-700 hover:to-gray-900 transform hover:scale-105 border border-gray-700'
               }`}
               disabled={loading}
             >

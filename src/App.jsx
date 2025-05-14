@@ -33,7 +33,7 @@ function App() {
   return (
     <AuthProvider>
       <BrowserRouter>
-        <div className="bg-gray-900 text-white scroll-smooth">
+        <div className="bg-black text-white scroll-smooth">
           <Navbar />
           <Routes>
             <Route path="/" element={<HomePage />} />

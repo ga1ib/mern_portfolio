@@ -33,12 +33,12 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed top-0 w-full bg-gray-900 bg-opacity-80 backdrop-blur-sm z-50">
+      <nav className="fixed top-0 w-full bg-black bg-opacity-30 backdrop-blur-sm z-50">
         <div className="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
-          <div className="text-2xl font-bold text-indigo-500">
+          <div className="text-2xl font-bold text-gray-300">
             <button
               onClick={() => handleNavigation('/')}
-              className="text-2xl font-bold text-indigo-500 bg-transparent border-none cursor-pointer"
+              className="text-2xl font-bold text-gray-300 hover:text-white bg-transparent border-none cursor-pointer"
             >
               Galib
             </button>
@@ -49,7 +49,7 @@ const Navbar = () => {
               <button
                 key={idx}
                 onClick={() => handleNavigation(path)}
-                className="cursor-pointer hover:text-indigo-400 capitalize bg-transparent border-none text-white"
+                className="cursor-pointer hover:text-gray-300 capitalize bg-transparent border-none text-white"
               >
                 {name}
               </button>
@@ -67,7 +67,7 @@ const Navbar = () => {
           </div>
         </div>
         {open && (
-          <div className="md:hidden bg-gray-800 px-4 py-2 space-y-2">
+          <div className="md:hidden bg-black px-4 py-2 space-y-2">
             {links.map(({ name, path }, idx) => (
               <button
                 key={idx}
@@ -85,7 +85,7 @@ const Navbar = () => {
       {showScrollTop && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="fixed bottom-6 right-6 p-3 rounded-full bg-indigo-600 text-white shadow-lg hover:bg-indigo-700 z-50"
+          className="fixed bottom-6 right-6 p-3 rounded-full bg-gray-800 text-white shadow-lg hover:bg-black border border-gray-700 z-50"
           aria-label="Scroll to top"
         >
           <ArrowUpIcon className="h-6 w-6" />

@@ -24,7 +24,7 @@ const Projects = () => {
 
   if (loading) {
     return (
-      <section className="min-h-screen flex items-center justify-center bg-[#0B0B2E] text-white px-6">
+      <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-black to-gray-900 text-white px-6">
         <div className="text-center">
           <h2 className="text-4xl font-bold mb-4">Projects</h2>
           <p className="text-xl">Loading projects...</p>
@@ -35,7 +35,7 @@ const Projects = () => {
 
   if (error) {
     return (
-      <section className="min-h-screen flex items-center justify-center bg-[#0B0B2E] text-white px-6">
+      <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-black to-gray-900 text-white px-6">
         <div className="text-center">
           <h2 className="text-4xl font-bold mb-4">Projects</h2>
           <p className="text-xl text-red-500">{error}</p>
@@ -46,9 +46,9 @@ const Projects = () => {
 
   if (projects.length === 0) {
     return (
-      <section className="min-h-screen flex items-center justify-center bg-[#0B0B2E] text-white px-6">
+      <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-black to-gray-900 text-white px-6">
         <div className="text-center">
-          <h2 className="text-4xl font-bold mb-4">Projects</h2>
+          <h2 className="text-4xl leading-normal font-bold mb-4">Projects</h2>
           <p className="text-xl">No projects found. Check back soon!</p>
         </div>
       </section>
@@ -56,10 +56,10 @@ const Projects = () => {
   }
 
   return (
-    <section id="projects" className="min-h-screen py-20 bg-gradient-to-b from-[#0B0B2E] to-[#1a1a4a] text-white px-6">
+    <section id="projects" className="min-h-screen py-20 bg-gradient-to-b from-black via-gray-900 to-gray-800 text-white px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">
+          <h2 className="text-5xl leading-normal font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-300 to-gray-500">
             My Projects
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
@@ -86,7 +86,7 @@ const Projects = () => {
             href="https://github.com/ga1ib"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-8 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full text-white font-semibold hover:from-indigo-500 hover:to-purple-500 transition-all duration-300 transform hover:scale-105 shadow-lg"
+            className="inline-block px-8 py-3 bg-gradient-to-r from-gray-800 to-black rounded-full text-white font-semibold hover:from-gray-700 hover:to-gray-900 transition-all duration-300 transform hover:scale-105 shadow-lg border border-gray-700"
           >
             View More on GitHub
           </a>

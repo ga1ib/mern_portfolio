@@ -7,7 +7,7 @@ const ProjectCard = ({ project }) => {
 
   return (
     <div
-      className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl overflow-hidden shadow-xl transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-gray-700"
+      className="bg-gradient-to-br from-black to-gray-800 rounded-xl overflow-hidden shadow-xl transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-gray-700"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -26,7 +26,7 @@ const ProjectCard = ({ project }) => {
             href={project.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full flex items-center transition-all duration-300 transform hover:scale-110"
+            className="bg-gradient-to-r from-gray-800 to-black text-white font-bold py-2 px-4 rounded-full flex items-center transition-all duration-300 transform hover:scale-110 border border-gray-700"
           >
             View Project <ArrowTopRightOnSquareIcon className="h-4 w-4 ml-2" />
           </a>
@@ -40,7 +40,7 @@ const ProjectCard = ({ project }) => {
             href={project.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-indigo-400 hover:text-indigo-300 font-medium flex items-center"
+            className="text-gray-300 hover:text-white font-medium flex items-center"
           >
             View on GitHub <ArrowTopRightOnSquareIcon className="h-4 w-4 ml-1" />
           </a>
